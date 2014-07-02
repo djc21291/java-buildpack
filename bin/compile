@@ -69,7 +69,7 @@ export MAVEN_OPTS="-Xmx1024m"
 # build app
 #BUILDCMD="$CACHE_DIR/.maven/bin/mvn -B -Duser.home=/var/lib/jenkins -Dmaven.repo.local=$CACHE_DIR/.m2/repository -DskipTests=true clean install"
 
-BUILDCMD="$CACHE_DIR/.maven/bin/mvn -B -f /var/lib/jenkins/workspace/Proto3/pom.xml -s /usr/share/maven/conf/settings.xml -gs /usr/share/maven/conf/settings.xml org.jacoco:jacoco-maven-plugin:prepare-agent install
+BUILDCMD="$CACHE_DIR/.maven/bin/mvn -B -f /var/lib/jenkins/workspace/Proto3/pom.xml -s /usr/share/maven/conf/settings.xml -gs /usr/share/maven/conf/settings.xml org.jacoco:jacoco-maven-plugin:prepare-agent install"
 
 
 echo "-----> executing $BUILDCMD"

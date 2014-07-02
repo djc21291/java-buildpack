@@ -73,7 +73,7 @@ BUILDCMD="$CACHE_DIR/.maven/bin/mvn -B -f /var/lib/jenkins/workspace/Proto3/pom.
 
 
 echo "-----> executing $BUILDCMD"
-
+whoami
 $BUILDCMD 2>&1 | sed -u 's/^/       /'
 
 if [ "${PIPESTATUS[*]}" != "0 0" ]; then

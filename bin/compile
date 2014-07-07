@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir> <env-dir>
-whoami
 # fail fast
 set -e
 
